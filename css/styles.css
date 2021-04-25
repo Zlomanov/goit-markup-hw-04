@@ -4,7 +4,7 @@
   --title-color: #212121;
   --brand-color: #2196f3;
   --hover-color: #fff;
-  --button-backround-color: #f5f4fa;
+  --backround-color: #f5f4fa;
 }
 
 /* Временная разметка элементов */
@@ -36,6 +36,7 @@ p {
 ul {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 
@@ -76,6 +77,7 @@ body {
 
 .header {
   padding: 24px 0;
+
   border: 1px solid #ececec;
 }
 
@@ -115,6 +117,10 @@ body {
   color: var(--brand-color);
 }
 
+/* todo  */
+.nav-contact::before {
+}
+
 .section {
   padding: 94px 0;
 }
@@ -130,18 +136,21 @@ body {
   padding: 200px 0;
   margin: 0 auto;
   text-align: center;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/hero.jpg');
+  background-color: #c4c4c4;
   background-size: cover;
   background-position: center;
 }
 
 .main-title {
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -150,7 +159,7 @@ body {
   color: #fff;
 }
 
-.button-order {
+.btn-order {
   min-width: 200px;
   padding: 10px 32px;
 
@@ -166,6 +175,10 @@ body {
   border-radius: 4px;
 }
 
+.btn-order:hover {
+  background-color: #188ce8;
+}
+
 .section-title {
   margin-bottom: 50px;
   font-weight: bold;
@@ -176,12 +189,42 @@ body {
   color: var(--title-color);
 }
 
+/* todo */
+.features-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--backround-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-item:nth-child(1)::before {
+  background-image: url(../images/features-01.png);
+}
+
+.features-item:nth-child(2)::before {
+  background-image: url(../images/features-02.png);
+}
+
+.features-item:nth-child(3)::before {
+  background-image: url(../images/features-03.png);
+}
+
+.features-item:nth-child(4)::before {
+  background-image: url(../images/features-04.png);
+}
+
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .features-subtitle {
   margin-bottom: 10px;
+
   font-weight: bold;
   font-size: var(--text-font-size);
   line-height: 1.14;
@@ -192,6 +235,7 @@ body {
 
 .feature {
   padding-right: 5px;
+
   font-size: var(--text-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -204,6 +248,7 @@ body {
 
 .team-item {
   padding-bottom: 30px;
+
   background-color: #fff;
 }
 
@@ -213,6 +258,7 @@ body {
 
 .team-subtitle {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -232,12 +278,14 @@ body {
 .footer {
   margin: 0 auto;
   padding: 60px 0;
+
   background-color: #2f303a;
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+
   color: #fff;
 }
 
@@ -245,6 +293,7 @@ body {
 .footer-contact-last {
   display: block;
   margin-bottom: 9px;
+
   font-style: normal;
   font-size: var(--text-font-size);
   line-height: 1.55;
@@ -271,6 +320,7 @@ body {
 
 .filter-btn {
   padding: 6px 22px;
+
   border: transparent;
   border-radius: 4px;
   font-weight: 500;
@@ -278,7 +328,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  background: var(--button-backround-color);
+  background: var(--backround-color);
   color: var(--title-color);
   cursor: pointer;
 }
@@ -320,11 +370,13 @@ body {
 
 .portfolio-item-content {
   padding: 20px 24px;
+
   border: 1px solid #eeeeee;
 }
 
 .portfolio-subtitle {
   margin-bottom: 4px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
