@@ -7,7 +7,7 @@
   --button-backround-color: #f5f4fa;
 }
 
-/* !Временная разметка элементов */
+/* Временная разметка элементов */
 /* header,
 section,
 footer,
@@ -119,18 +119,25 @@ body {
   padding: 94px 0;
 }
 
-/* !У секции "Чем мы занимаемся" на макете padding-top=0, что противоречит заданию "B15". Сделал согласно макета */
-.section-actions {
+/* У секции "Чем мы занимаемся" на макете padding-top=0, что противоречит заданию "B15". Сделал согласно макета */
+.actions {
   padding-bottom: 94px;
 }
 
-.section-hero {
-  width: 1600px;
+.hero {
+  max-width: 1600px;
   min-height: 600px;
   padding: 200px 0;
   margin: 0 auto;
   text-align: center;
-  background: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .main-title {
@@ -223,7 +230,6 @@ body {
 }
 
 .footer {
-  width: 1600px;
   margin: 0 auto;
   padding: 60px 0;
   background-color: #2f303a;
