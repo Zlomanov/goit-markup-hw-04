@@ -5,7 +5,7 @@
   --brand-color: #2196f3;
   --hover-color: #fff;
   --backround-color: #f5f4fa;
-  --social-link: #afb1b8;
+  --svg-color: #afb1b8;
 }
 
 /* Временная разметка элементов */
@@ -268,14 +268,13 @@ body {
   padding: 0 32px;
 }
 
-/* todo */
 .team-link,
 .team-link a:visited {
   width: 44px;
   height: 44px;
   padding: 12px;
 
-  fill: var(--social-link);
+  fill: var(--svg-color);
 }
 
 .team-link:hover,
@@ -283,6 +282,35 @@ body {
   border-radius: 50%;
   background-color: var(--brand-color);
   fill: var(--hover-color);
+}
+
+/* todo */
+
+.clients-item,
+.clients-item a:visited {
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 92px;
+
+  border: 1px solid var(--svg-color);
+  border-radius: 4px;
+  fill: var(--svg-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item:hover,
+.clients-item:hover a:visited {
+  background-color: var(--brand-color);
+  fill: var(--hover-color);
+}
+
+.client-logo {
+  margin: 0 auto;
 }
 
 .footer {
