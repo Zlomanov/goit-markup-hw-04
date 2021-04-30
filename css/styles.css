@@ -284,8 +284,6 @@ body {
   fill: var(--hover-color);
 }
 
-/* todo */
-
 .clients-item,
 .clients-item a:visited {
   justify-content: center;
@@ -320,6 +318,10 @@ body {
   background-color: #2f303a;
 }
 
+.footer-identic {
+  margin-right: 70px;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -346,6 +348,48 @@ body {
 
 .footer-contact-address {
   color: #fff;
+}
+
+.join {
+  padding-top: 12px;
+}
+
+.join-title {
+  font-weight: bold;
+  font-size: var(--text-font-size);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.join-social {
+  padding-top: 20px;
+}
+
+/* todo */
+.team-social {
+  padding: 0 32px;
+}
+
+.join-link,
+.join-link a:visited {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--hover-color);
+}
+
+.join-link:hover,
+.join-link:hover a:visited {
+  background: var(--brand-color);
+}
+
+.join-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .filter {
