@@ -5,6 +5,7 @@
   --brand-color: #2196f3;
   --hover-color: #fff;
   --backround-color: #f5f4fa;
+  --social-link: #afb1b8;
 }
 
 /* Временная разметка элементов */
@@ -107,9 +108,13 @@ body {
 .nav-link {
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-color);
+}
+
+.nav-icon {
+  margin-right: 10px;
 }
 
 .nav-link:hover,
@@ -117,8 +122,10 @@ body {
   color: var(--brand-color);
 }
 
-/* todo  */
-.nav-contact::before {
+/* !Убирать вручную дефолтное свойство fill в svg-sprite*/
+.nav-link:hover .nav-icon,
+.nav-link:focus .nav-icon {
+  fill: var(--brand-color);
 }
 
 .section {
@@ -193,6 +200,7 @@ body {
 .features-item {
   max-width: 270px;
 }
+
 .features-img {
   margin-bottom: 30px;
   padding: 25px 100px;
@@ -247,11 +255,34 @@ body {
 }
 
 .team-member {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.team-social {
+  padding: 0 32px;
+}
+
+/* todo */
+.team-link,
+.team-link a:visited {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  fill: var(--social-link);
+}
+
+.team-link:hover,
+.team-link:hover a:visited {
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  fill: var(--hover-color);
 }
 
 .footer {
