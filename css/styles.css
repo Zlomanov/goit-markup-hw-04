@@ -181,6 +181,7 @@ body {
 
 .section-title {
   margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -189,22 +190,15 @@ body {
   color: var(--title-color);
 }
 
+.features-item {
+  max-width: 270px;
+}
 .features-img {
   margin-bottom: 30px;
   padding: 25px 100px;
 
   background-color: var(--backround-color);
   border-radius: 4px;
-}
-
-.features-icon {
-  display: block;
-  width: 70px;
-  height: 70px;
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-subtitle {
