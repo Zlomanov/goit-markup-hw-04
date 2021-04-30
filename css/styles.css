@@ -189,33 +189,18 @@ body {
   color: var(--title-color);
 }
 
-/* todo */
-.features-item::before {
-  content: '';
-  display: block;
-  height: 120px;
+.features-img {
   margin-bottom: 30px;
+  padding: 25px 100px;
 
   background-color: var(--backround-color);
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.features-item:nth-child(1)::before {
-  background-image: url(../images/features-01.png);
-}
-
-.features-item:nth-child(2)::before {
-  background-image: url(../images/features-02.png);
-}
-
-.features-item:nth-child(3)::before {
-  background-image: url(../images/features-03.png);
-}
-
-.features-item:nth-child(4)::before {
-  background-image: url(../images/features-04.png);
+.features-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
 }
 
 .features-item:not(:last-child) {
