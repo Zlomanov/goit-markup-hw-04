@@ -122,7 +122,7 @@ body {
   color: var(--brand-color);
 }
 
-/* !Убирать вручную дефолтное свойство fill в svg-sprite*/
+/* todo Для изменения свойства fill при :hover нужно вручную удалить дефолтные значения этого свойства в svg-sprite*/
 .nav-link:hover .nav-icon,
 .nav-link:focus .nav-icon {
   fill: var(--brand-color);
@@ -304,10 +304,13 @@ body {
   margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:hover a:visited {
-  background-color: var(--brand-color);
-  fill: var(--hover-color);
+.clients-item:hover .client-logo {
+  fill: var(--brand-color);
+}
+
+.clients-item:hover {
+  border-color: var(--brand-color);
+  cursor: pointer;
 }
 
 .client-logo {
